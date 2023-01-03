@@ -1,0 +1,8 @@
+package com.ezen.book.controller;
+
+@Slf4j
+@RequestMapping("/board/*")
+@Controller
+public class BoardController {
+
+}

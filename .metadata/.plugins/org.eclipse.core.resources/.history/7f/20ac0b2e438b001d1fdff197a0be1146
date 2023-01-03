@@ -1,0 +1,26 @@
+package com.ezen.book.controller;
+
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.ezen.book.repository.MemberDAO;
+import com.ezen.book.service.BoardService;
+import com.ezen.book.service.MemberServiceImpl;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@RequestMapping("/board/*")
+@Controller
+public class BoardController {
+
+	@Inject
+	private BoardService bsv;
+	@Inject
+	private MemberDAO mdao;
+	@Inject
+	private MemberServiceImpl msv;
+	
+}
